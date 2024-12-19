@@ -32,6 +32,15 @@ height: 1200px;
 flex-direction: column;
 }
 }
+
+@media (max-width: 750px) {
+    .main {
+
+        width: 375px;
+        height: 850px;
+        flex-direction: column;
+    }
+}
 .image-wrapper {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -52,12 +61,30 @@ flex-direction: column;
         border-top-right-radius: 20px;
     }
 }
+@media (max-width: 750px) {
+    .image-wrapper {
+        display: none;
+
+    }
+    .replacement-image {
+        display: block;
+        width: 375px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
 .main-text {
     padding: 40px;
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 375px) {
+    .main-text {
+        padding: 40px 20px 40px 20px;
+    }
 
+}
 .parfume {
     padding-top: 30px;
     font-family: "Montserrat",  serif;
@@ -87,6 +114,14 @@ flex-direction: column;
     }
 
 }
+@media (max-width: 750px){
+    .h1-text {
+        padding-top: 12px;
+        font-size: 36px;
+        width: 375px;
+    }
+
+}
 .description {
     padding-top: 36px;
     font-family: "Montserrat",  serif;
@@ -104,13 +139,25 @@ flex-direction: column;
     }
 
 }
+@media (max-width: 750px){
+    .description {
+        padding-top: 12px;
+        line-height: 40px;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
 
+}
 .price {
     padding-top: 36px;
     display: flex;
-    gap: 70px;
+    gap: 80px;
+}
 
-
+@media (max-width: 750px) {
+.price {
+    gap: 30px;
+}
 }
 
 h2 {
@@ -159,6 +206,12 @@ background-color: hsl(158, 36%, 37%, 0.3);
 @media (max-width: 1400px) {
     .btn {
         width: 600px;
+    }
+}
+
+@media (max-width: 750px) {
+    .btn {
+        width: 350px;
     }
 }
 
